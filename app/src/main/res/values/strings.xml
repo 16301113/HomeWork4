@@ -1,0 +1,43 @@
+<resources>
+    <string name="app_name">Sports Dashboard</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>h
+    <string name="important_info">Important Information</string>
+    <string name="info_content">Seminar On Ripped Diet by you\n today at 3:20pm</string>
+    <string name="title_activity_navigation">navigationActivity</string>
+    <string name="action_settings">Settings</string>
+    <string name="first_title">Upcomming Exam - 2nd Mid</string>
+    <string name="exam_items">4th April, Tuesday - EDC\n5th April, Wednesday - WT\n6th April, Thursday - ES\n7th April, Friday - DOS\n8th April, Saturday - AI\n9th April, Monday - OS\n10th April, Tuesday - CA </string>
+    <string name="second_title">Subjects info:</string>
+    <string name="item_info">AI - Artificial Intelligence\nCA - Computer Architecture\nDOS - Distributed Operating Systems\nEDC - Electronic Devices and Circuits\nES - Embedded Systems\nOS - Operating Systems\nWT - Web Technologies\nLIB - Library Time\nPLAY - Sports Time\n </string>
+    <string name="no_favorite">Not yet collected</string>
+    <!-- This is for Login -->
+    <string name="welcome_text">Welcom to Sport Club</string>
+    <string name="username_input_hint">Enter username</string>
+    <string name="password_input_hint">Enter password</string>
+    <string name="signin">Sign in</string>
+    <string name="forget_password">Forget password</string>
+    <string name="register">Register Now</string>
+    <!-- This is for Register -->
+    <string name="register_text">Welcome to join us</string>
+    <string name="signup">Sign up</string>
+    <string name="ensure_password_input_hint">Enter password again</string>
+    <string name="title_activity_bottom_navigation">BottomNavigationActivity</string>
+    <string name="loginRightNow">Have an account? Login now!</string>
+    <!-- This is for bottom navigation -->
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Recommend</string>
+    <string name="title_coaches">Coaches</string>
+    <string name="title_yourself">My</string>
+    <string name="title_schedule">Schedule</string>
+    <string name="title_activity_tabbed">TabbedActivity</string>
+    <string name="section_format">Hello World from section: %1$d</string>
+    <string name="noAppointment">No appointment</string>
+    <string name="gotoAppointment">Find fascinating</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <!-- This is for left navigation-->
+    <string name="intro">School of Software Engineering</string>
+    <string name="mail">info@edu.bjtu.cn</string>
+    <!--This is for video play-->
+    <string name="appbar_scrolling_view_behavior" translatable="false">android.support.design.widget.AppBarLayout$ScrollingViewBehavior</string>
+</resources>

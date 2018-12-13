@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<LinearLayout android:padding="20dp"
+    android:orientation="horizontal"
+    android:gravity="center_vertical"
+    android:background="@android:color/darker_gray"
+    android:layout_height="176dp"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <ImageView
+        android:layout_height="100dp"
+        android:layout_width="80dp"
+
+        android:src="@drawable/logo2"
+        android:id="@+id/profile_image"
+        xmlns:app="http://schemas.android.com/apk/res-auto"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="center">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:fontFamily="@font/cousine"
+            android:paddingTop="8dp"
+            android:text="Sports Club"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+            android:textSize="24sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/cousine"
+            android:text="Self-discipline frees me"
+            android:textSize="14sp" />
+
+    </LinearLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,411 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UI.fragment.HomeFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="200dp">
+
+                <!--轮播-->
+                <com.daimajia.slider.library.SliderLayout
+                    android:id="@+id/slider"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:pager_animation="Accordion"
+                    app:auto_cycle="true"
+                    app:indicator_visibility="visible"
+                    app:pager_animation_span="1100" />
+            </RelativeLayout>
+            <!--存放图片的ViewPager-->
+            <!--<android.support.v4.view.ViewPager-->
+                <!--android:id="@+id/viewpager"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="150dp" />-->
+
+            <!--<LinearLayout-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="40dp"-->
+                <!--android:layout_alignParentBottom="true"-->
+                <!--android:background="#66000000"-->
+                <!--android:gravity="center_horizontal"-->
+                <!--android:orientation="vertical"-->
+                <!--android:padding="5dp">-->
+
+                <!--<TextView-->
+                    <!--android:id="@+id/tv_pc"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:singleLine="true"-->
+                    <!--android:text="标题"-->
+                    <!--android:textColor="@color/colorWhite"/>-->
+
+                <!--&lt;!&ndash;存放原点的容器&ndash;&gt;-->
+                <!--<LinearLayout-->
+                    <!--android:id="@+id/point_container"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_marginTop="5dp"-->
+                    <!--android:orientation="horizontal" />-->
+            <!--</LinearLayout>-->
+
+
+            <!--<ImageView-->
+                <!--android:id="@+id/imagePoint1"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:adjustViewBounds="true"-->
+                <!--android:src="@drawable/nav_sports" />-->
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="monospace"
+                android:gravity="center"
+                android:text="Details Information"
+                android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                android:textSize="30sp" />
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="casual"
+                android:gravity="center"
+                android:text="Welcome to sports"
+                android:textAllCaps="false"
+                android:textColor="@android:color/darker_gray"
+                android:textSize="36sp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:id="@+id/panel1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/button1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="85dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_weight="1"
+                    android:background="@mipmap/swimming" />
+
+                <View
+                    android:layout_width="3px"
+                    android:layout_height="match_parent"
+                    android:background="#FFFFFF" />
+
+                <Button
+                    android:id="@+id/button2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="85dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_toRightOf="@+id/button1"
+                    android:layout_weight="1"
+                    android:background="@mipmap/archery" />
+
+                <View
+                    android:layout_width="3px"
+                    android:layout_height="match_parent"
+                    android:background="#FFFFFF" />
+
+                <Button
+                    android:id="@+id/button3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="85dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_toRightOf="@+id/button2"
+                    android:layout_weight="1"
+                    android:background="@mipmap/basketball" />
+
+                <View
+                    android:layout_width="3px"
+                    android:layout_height="match_parent"
+                    android:background="#FFFFFF" />
+
+                <Button
+                    android:id="@+id/button4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="85dp"
+                    android:layout_toRightOf="@+id/button3"
+                    android:layout_weight="1"
+                    android:background="@mipmap/badminton" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="3px"
+                android:background="#FFFFFF" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="86dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:fontFamily="serif"
+                    android:gravity="center"
+                    android:text="Swimming"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Button"
+                    tools:textAppearance="@style/TextAppearance.AppCompat.Button" />
+
+                <TextView
+                    android:layout_width="82dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:fontFamily="serif"
+                    android:gravity="center"
+                    android:text="Archery"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Button"
+                    android:textSize="14dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:fontFamily="serif"
+                    android:gravity="center"
+                    android:text="Basketball"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Button"
+                    android:textSize="14dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:fontFamily="serif"
+                    android:gravity="center"
+                    android:text="Badminton"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Button"
+                    android:textSize="14dp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/panel2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/panel1"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/button5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="85dp"
+                    android:layout_below="@+id/button1"
+                    android:layout_weight="1"
+                    android:background="@mipmap/beach_volleyball" />
+
+                <View
+                    android:layout_width="3px"
+                    android:layout_height="match_parent"
+                    android:background="#FFFFFF" />
+
+                <Button
+                    android:id="@+id/button6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="85dp"
+                    android:layout_toRightOf="@+id/button5"
+                    android:layout_weight="1"
+                    android:background="@mipmap/bowling" />
+
+                <View
+                    android:layout_width="3px"
+                    android:layout_height="match_parent"
+                    android:background="#FFFFFF" />
+
+                <Button
+                    android:id="@+id/button7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="85dp"
+                    android:layout_toRightOf="@+id/button6"
+                    android:layout_weight="1"
+                    android:background="@mipmap/fishing" />
+
+                <View
+                    android:layout_width="3px"
+                    android:layout_height="match_parent"
+                    android:background="#FFFFFF" />
+
+                <Button
+                    android:id="@+id/button8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="85dp"
+                    android:layout_toRightOf="@+id/button7"
+                    android:layout_weight="1"
+                    android:background="@mipmap/fencing" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="72dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:fontFamily="serif"
+                    android:gravity="center_vertical|center_horizontal"
+                    android:text="Beach Volleyball"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Button"
+                    android:textSize="14dp" />
+
+                <TextView
+                    android:layout_width="72dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:fontFamily="serif"
+                    android:gravity="center"
+                    android:text="Bowling"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Button"
+                    android:textSize="14dp" />
+
+                <TextView
+                    android:layout_width="72dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:fontFamily="serif"
+                    android:gravity="center"
+                    android:text="fishing"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Button"
+                    android:textSize="14dp" />
+
+                <TextView
+                    android:layout_width="70dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:fontFamily="serif"
+                    android:gravity="center"
+                    android:text="fencing"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Button"
+                    android:textSize="14dp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/panel2"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/button9"
+                    android:layout_width="wrap_content"
+                    android:layout_height="85dp"
+                    android:layout_below="@+id/button5"
+                    android:layout_weight="1"
+                    android:background="@mipmap/football" />
+
+                <View
+                    android:layout_width="3px"
+                    android:layout_height="match_parent"
+                    android:background="#FFFFFF" />
+
+                <Button
+                    android:id="@+id/button10"
+                    android:layout_width="wrap_content"
+                    android:layout_height="85dp"
+                    android:layout_toRightOf="@+id/button9"
+                    android:layout_weight="1"
+                    android:background="@mipmap/table_tennis" />
+
+                <View
+                    android:layout_width="3px"
+                    android:layout_height="match_parent"
+                    android:background="#FFFFFF" />
+
+                <Button
+                    android:id="@+id/button11"
+                    android:layout_width="wrap_content"
+                    android:layout_height="85dp"
+                    android:layout_toRightOf="@+id/button10"
+                    android:layout_weight="1"
+                    android:background="@mipmap/tennis" />
+
+                <View
+                    android:layout_width="3px"
+                    android:layout_height="match_parent"
+                    android:background="#FFFFFF" />
+
+                <Button
+                    android:id="@+id/button12"
+                    android:layout_width="wrap_content"
+                    android:layout_height="85dp"
+                    android:layout_toRightOf="@+id/button11"
+                    android:layout_weight="1"
+                    android:background="@mipmap/skating" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="42dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:fontFamily="serif"
+                    android:gravity="center"
+                    android:text="Football"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Button"
+                    android:textSize="14dp" />
+
+                <TextView
+                    android:layout_width="70dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:fontFamily="serif"
+                    android:gravity="center_vertical|center"
+                    android:text="Table Tennis"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Button"
+                    android:textSize="14dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:fontFamily="serif"
+                    android:gravity="center"
+                    android:text="Tennis"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Button"
+                    android:textSize="14dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:fontFamily="serif"
+                    android:gravity="center"
+                    android:text="Skating"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Button"
+                    android:textSize="14dp" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>
