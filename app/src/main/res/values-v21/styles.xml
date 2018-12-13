@@ -3,7 +3,7 @@
 
         <!-- All customizations that are NOT specific to a particular API-level can go here. -->
 
-        <item name="colorPrimaryDark">#FF9800</item>
+        <item name="colorPrimaryDark">#808080</item>
         <item name="colorPrimary">#607D8B</item>
     </style>
     <style name="AppTheme.NoActionBar">

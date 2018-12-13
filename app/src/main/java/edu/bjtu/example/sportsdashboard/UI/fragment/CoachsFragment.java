@@ -71,7 +71,7 @@ public class CoachsFragment extends Fragment {
 
         for (int i = 1;i < 11;i++){
             Map<String, Object> map = new HashMap<String, Object>();
-            map.put("coach_photo",R.drawable.trainer1);
+            map.put("coach_photo",R.drawable.trainer3);
             map.put("coach_name","online_coach_name" + i);
             map.put("coach_introduction","online_introduction" + i);
             list.add(map);

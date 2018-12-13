@@ -57,6 +57,7 @@ public class MainActivity extends AppCompatActivity{
     private DrawerLayout drawerLayout;
     private SliderLayout sliderShow;
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -65,33 +66,31 @@ public class MainActivity extends AppCompatActivity{
         Bmob.initialize(this, "24d2dd9a00667b645f55acaef2d11e16");
         current_user = BmobUser.getCurrentUser();
         int ms = 0;
-        int mms = 0;
+//        int mms = 0;
         while (!isInternet.isNetworkAvalible(getApplicationContext())){
             try {
                 Thread.sleep(10);
                 ms += 10;
-                mms += 10;
+//                mms += 10;
                 if (ms == 3000){
                     break;
                 }
-                if (mms <100){
-                    Toast.makeText(MainActivity.this, "正在检查网络连接。", Toast.LENGTH_LONG).show();
-                }else if (mms <200){
-                    Toast.makeText(MainActivity.this, "正在检查网络连接。。", Toast.LENGTH_LONG).show();
-                }else if (mms <300){
-                    Toast.makeText(MainActivity.this, "正在检查网络连接。。。", Toast.LENGTH_LONG).show();
-                }else {
-                    mms = 0;
-                    Toast.makeText(MainActivity.this, "正在检查网络连接。", Toast.LENGTH_LONG).show();
-                }
+//                if (mms <100){
+//                    Toast.makeText(MainActivity.this, "正在检查网络连接。", Toast.LENGTH_LONG).show();
+//                }else if (mms <200){
+//                    Toast.makeText(MainActivity.this, "正在检查网络连接。。", Toast.LENGTH_LONG).show();
+//                }else if (mms <300){
+//                    Toast.makeText(MainActivity.this, "正在检查网络连接。。。", Toast.LENGTH_LONG).show();
+//                }else {
+//                    mms = 0;
+//                    Toast.makeText(MainActivity.this, "正在检查网络连接。", Toast.LENGTH_LONG).show();
+//                }
             } catch (InterruptedException e) {
                 e.printStackTrace();
             }
         }
 
-        if (ms == 3000){
-            jump2main();
-        }
+
 
 
         if (current_user != null) {
@@ -106,6 +105,9 @@ public class MainActivity extends AppCompatActivity{
             System.out.println(mes.get(0)[1]);
             if (!mes.get(0)[0].equalsIgnoreCase("admin")){
                 jump2main();
+            }
+            if (!isInternet.isNetworkAvalible(getApplicationContext())){
+                Toast.makeText(MainActivity.this, "无网络连接", Toast.LENGTH_LONG).show();
             }
             //设置下划线
             TextView forget_text = findViewById(R.id.forget_text);
@@ -123,14 +125,22 @@ public class MainActivity extends AppCompatActivity{
             signup_text.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
-                    Intent intent = new Intent(MainActivity.this, register.class);
-                    startActivity(intent);
+                    if (!isInternet.isNetworkAvalible(getApplicationContext())) {
+                        Toast.makeText(MainActivity.this, "无网络连接，请检查设置！", Toast.LENGTH_LONG).show();
+                    } else {
+                        Intent intent = new Intent(MainActivity.this, register.class);
+                        startActivity(intent);
+                    }
                 }
             });
         }
     }
 
     public void Login(View view) {
+        if (!isInternet.isNetworkAvalible(getApplicationContext())){
+            Toast.makeText(MainActivity.this, "无网络连接,请检查你的设置！", Toast.LENGTH_LONG).show();
+            return;
+        }
         EditText username_input = findViewById(R.id.username_input);
         EditText password_input = findViewById(R.id.password_input);
 
